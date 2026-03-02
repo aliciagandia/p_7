@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexible Visual Systems</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter", sans-serif;
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height:100vh; 
+}
+
+#uno{
+    flex:1;
+    background:linear-gradient(180deg,#1e3c72,#2a5298,#6fb1fc);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:3vw;
+}
+
+.title{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.inter-headers{
+    color:white;
+    text-transform:uppercase;
+    font-size:2.5vw;
+    font-weight:700;
+    line-height:0.9; 
+}
+
+.project-link{
+    font-size:1.5vw;
+}
+
+.inter-headers a{
+    color:white;
+    text-decoration:none;
+}
+
+.inter-headers a:hover{
+    text-decoration:underline;
+}
+
+
+#dos{
+    flex:1;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:3vw;
+}
+
+
+
+.row{
+    display:flex;
+    gap:2vw;
+    height:30%;
+}
+
+
+.rect{
+    flex:1;
+    background:blue;
+    height:100%;
+}
+
+.rect-wide{
+    flex:2;
+    background:blue;
+    height:100%;
+}
+
+
+.circle{
+    flex:1;
+    height:100%;
+    border-radius:50%;
+    background:red;
+    box-shadow:0 0 60px rgba(255,0,0,0.6);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="uno">
+        
+        <div class="title">
+            <h1 class="inter-headers">ALICIA GANDÍA</h1>
+            <h1 class="inter-headers">PROYECTOS</h1>
+        </div>
+
+        <div>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/P1/" target="_blank">P1</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/P2/" target="_blank">P2</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/P3/" target="_blank">P3</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/Project-4/" target="_blank">P4</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/p5/pages/alicia" target="_blank">P5</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/p5_2/" target="_blank">P5_2</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/p6_/" target="_blank">P6</a></h2>
+            <h2 class="inter-headers project-link"><a href="socunaa-002.pdf" target="_blank">P8</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://aliciagandia.github.io/p9/" target="_blank">P9</a></h2>
+            <h2 class="inter-headers project-link"><a href="https://www.figma.com/design/jCCkaEOU6MfNETPgGtgUnk/formagenda?node-id=3-2&t=nMBQYFH4HBLqZznv-1" target="_blank">F1</a></h2>
+        </div>
+    </div>
+
+    <div id="dos">
+        <div class="row">
+            <div class="rect"></div>
+            <div class="circle"></div>
+            <div class="rect"></div>
+        </div>
+
+        <div class="row">
+            <div class="circle"></div>
+            <div class="rect-wide"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="row">
+            <div class="rect"></div>
+            <div class="circle"></div>
+            <div class="rect"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
